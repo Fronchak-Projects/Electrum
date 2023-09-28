@@ -1,0 +1,13 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.banners
+  @include layouts-mixins.center-content-with-padding-y(3rem)
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  gap: 2em
+
+  @include base-mixins.mobile
+    @include layouts-mixins.center-content-with-padding-y(1rem)

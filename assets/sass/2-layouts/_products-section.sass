@@ -1,0 +1,22 @@
+@use '../1-base/base-mixins'
+@use 'layouts-mixins'
+
+.products-grid
+  @include layouts-mixins.center-content-with-padding-y(2rem)
+
+  @include base-mixins.mobile
+    @include layouts-mixins.center-content-with-padding-y(1rem)
+
+  h2
+    font-size: 2rem
+    text-transform: uppercase
+    margin-bottom: 1em
+
+    @include base-mixins.mobile
+      margin-bottom: 0.5em
+
+  &-container
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 2em

@@ -1,0 +1,46 @@
+@use '../1-base/variables'
+
+@mixin center-content
+  max-width: variables.$container-width
+  margin: 0 auto
+  padding-left: 1em
+  padding-right: 1em
+
+@mixin padding-y($padding-value: 1em)
+  padding-top: $padding-value
+  padding-bottom: $padding-value
+
+@mixin center-content-with-padding-y($padding-value: 1em)
+  @include center-content
+  @include padding-y($padding-value)
+
+
+@mixin header-icon
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 0.8em
+  gap: 0.2em
+
+  .qty
+    position: absolute
+    font-size: 0.8em
+    top: 0px
+    right: 15px
+    background-color: variables.$primary-color
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 18px
+    min-width: 18px
+    border-radius: 50%
+
+  a:hover
+    color: variables.$primary-color
+
+@mixin rounded-input
+  height: variables.$input-height
+  border-top-left-radius: variables.$rounded-input-radius
+  border-bottom-left-radius: variables.$rounded-input-radius
+  padding-left: 25px
