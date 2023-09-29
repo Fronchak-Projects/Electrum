@@ -2,7 +2,7 @@
 
 This project is a static page, created using HTML, CSS and SASS.
 
-## [Click here](https://electrum-fronchak-projects.vercel.app) to go the project page
+## [Click here](https://electrum-fronchak-projects.vercel.app) to go to the project page
 
 ## Requirements
 * SASS
